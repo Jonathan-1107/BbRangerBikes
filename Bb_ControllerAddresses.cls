@@ -41,7 +41,7 @@ public without sharing class Bb_ControllerAddresses{
     }
 
     @AuraEnabled
-    public static Map<String, Object> UpdateContactPointAddress(Map<String, Object> dataMap) {
+    public static Map<String, Object> updateContactPointAddress(Map<String, Object> dataMap) {
         String cpID = (String)dataMap.get('cpAddressId');
 
         ContactPointAddress  cpaRecord = [SELECT Id, Name, AddressType, Country, Address, City, State,Street, PostalCode, IsDefault 
@@ -63,10 +63,6 @@ public without sharing class Bb_ControllerAddresses{
         dataMap.put('orderRecord',orderedItems);
         return dataMap; 
     }
-
-
-
-
     @AuraEnabled
     public static Map<String, Object> saveNewAddress(Map<String, Object> dataMap) {
         string cartId = (string)dataMap.get('cartId');
