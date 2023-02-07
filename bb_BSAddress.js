@@ -2,7 +2,7 @@ import { LightningElement, api,track } from 'lwc';
 import getContactPointAddress from '@salesforce/apex/Bb_ControllerAddresses.getContactPointAddress';
 import getContactPointAddressById from '@salesforce/apex/Bb_ControllerAddresses.getContactPointAddressById';
 import updateCartDeliveryGroup from '@salesforce/apex/Bb_ControllerAddresses.updateCartDeliveryGroup';
-import UpdateContactPointAddress from '@salesforce/apex/Bb_ControllerAddresses.UpdateContactPointAddress';
+import updateContactPointAddress from '@salesforce/apex/Bb_ControllerAddresses.updateContactPointAddress';
 import saveNewAddress from '@salesforce/apex/Bb_ControllerAddresses.saveNewAddress';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { FlowAttributeChangeEvent, FlowNavigationNextEvent } from 'lightning/flowSupport';
